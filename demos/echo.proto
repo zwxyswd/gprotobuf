@@ -1,0 +1,12 @@
+message EchoRequest {
+    required string info = 1;
+}
+
+message EchoResponse {
+    required string info = 1;
+}
+
+
+service Echo{
+    rpc Hello(EchoRequest) returns(EchoResponse);
+}
